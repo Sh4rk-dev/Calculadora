@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: none;
+}
+
+body{
+
+    display: flex;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    
+}
+
+.cal{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 15.4rem;
+    height: 22.7rem;
+
+    background-color: #ccc;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+    box-shadow: 1px 1px 10px 2px;
+}
+
+.display{
+
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.displayLine{
+
+    display: flex;
+
+    width: 200px;
+
+    padding: 3px;
+    font-size: 22px;
+
+    border: none;
+    background-color: #ccc;
+
+}
+
+.number-Signals{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonSignals, 
+.buttonLine1, 
+.buttonLine2, 
+.buttonLine3, 
+.buttonLine3, 
+.buttonLine4{
+
+    width:50px;
+    height: 45px;
+
+    margin-bottom: 4px;
+    padding: 2px;
+    font-size: 18px;
+    cursor: pointer;
+
+    border: 1px solid #fff;
+    background-color: #ccc;
+    
+
+}
+
+
+.buttonSignals:hover{
+    background-color: #929292;
+    transition: 0.2s;
+}
+
+.buttonLine1:hover{
+    background-color: #929292;
+    transition: 0.2s;
+}
+
+.buttonLine2:hover{
+    background-color: #929292;
+    transition: 0.2s;
+}
+
+.buttonLine3:hover{
+    background-color: #929292;
+    transition: 0.2s;
+}
+
+.buttonLine4:hover{
+    background-color: #929292;
+    transition: 0.2s;
+}
+
+.buttonTotal{
+    width: 48.8%;
+    height: 45px;
+
+    font-size: large;
+}
+

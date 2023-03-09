@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Calculate</title>
+</head>
+
+<body>
+
+
+    <div class="cal">
+        <div class="display">
+            <input id="displayLine" class="displayLine" type="text" placeholder="0">
+        </div>
+
+        <div class="buttons">
+            <div class="signal">
+                <input onclick="MakeOperation('clear')" id="clear" class="buttonSignals" type="button" value="C">
+                <input onclick="AddParentheses()" id="parentheses" class="buttonSignals" type="button" value="( )">
+                <input id="percentage" class="buttonSignals" type="button" value="%" disabled>
+                <input onclick="MakeOperation('/')" id="division" class="buttonSignals" type="button" value="/">
+            </div>
+
+            <div class="numbers">
+                <div class="line1">
+                    <input onclick="SetNum(7)" class="buttonLine1" type="button" value="7">
+                    <input onclick="SetNum(8)" class="buttonLine1" type="button" value="8">
+                    <input onclick="SetNum(9)" class="buttonLine1" type="button" value="9">
+                    <input onclick="MakeOperation('x')" id="multiplication" class="buttonLine1" type="button" value="x">
+                </div>
+
+                <div class="lin2">
+                    <input onclick="SetNum(4)" class="buttonLine2" type="button" value="4">
+                    <input onclick="SetNum(5)" class="buttonLine2" type="button" value="5">
+                    <input onclick="SetNum(6)" class="buttonLine2" type="button" value="6">
+                    <input onclick="MakeOperation('-')" id="Subtract" class="buttonLine2" type="button" value="-">
+                </div>
+                <div class="line3">
+                    <input onclick="SetNum(1)" class="buttonLine3" type="button" value="1">
+                    <input onclick="SetNum(2)" class="buttonLine3" type="button" value="2">
+                    <input onclick="SetNum(3)" class="buttonLine3" type="button" value="3">
+                    <input onclick="MakeOperation('+')" id="sum" class="buttonLine3" type="button" value="+">
+                </div>
+                <div class="line4">
+                    <input onclick="AddPoint()" id="point" class="buttonLine4" type="button" value=".">
+                    <input onclick="SetNum(0)" class="buttonLine4" type="button" value="0">
+                    <input onclick="equal()" id="equal" class="buttonTotal" type="button" value="=">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
